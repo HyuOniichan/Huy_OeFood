@@ -46,7 +46,7 @@ function FoodMenuCreate() {
 
         console.log(newFood)
 
-        fetch('http://localhost:4004/food', {
+        fetch('https://oefood.onrender.com/food', {
             method: 'POST',
             body: JSON.stringify(newFood),
             headers: { "Content-Type": "application/json" }

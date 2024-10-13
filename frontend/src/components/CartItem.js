@@ -31,7 +31,7 @@ function CartItem({ data, handleTotal, subtotal }) {
         menu[changeId].cart = false
         setMenu(menu) 
         
-        fetch(`http://localhost:4004/food/${data._id}`, {
+        fetch(`https://oefood.onrender.com/food/${data._id}`, {
             method: 'PUT',
             body: JSON.stringify(data),
             headers: { "Content-Type": "application/json" }

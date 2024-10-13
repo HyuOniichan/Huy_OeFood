@@ -8,7 +8,7 @@ function CartList({ handleTotal, subtotal }) {
     const [menu, setMenu] = useContext(MenuContext)
 
     useEffect(() => {
-        fetch('http://localhost:4004/food')
+        fetch('https://oefood.onrender.com/food')
             .then(res => res.json())
             .then(data => setMenu(data))
             .catch(err => console.log(err))
