@@ -12,5 +12,5 @@ Repisitory: Huy_OeFood
 1. Tech stack: MERN  
 2. UI: Bootstrap 
 3. Database: MongoDB Atlas 
-4. Deployment: Heroku & Netlify 
+4. Deployment: Render.com 
 
