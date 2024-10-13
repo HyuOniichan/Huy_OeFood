@@ -1,10 +1,14 @@
 {
   "name": "oefood",
   "version": "1.0.0",
-  "description": "<h1 align=\"center\">OeFood</h1>",
+  "description": "A food delivery app using MERN stack",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "install-backend": "cd backend && npm install", 
+    "start-backend": "cd backend && npm run dev", 
+    "install-frontend": "cd frontend && npm install", 
+    "start-frontend": "cd frontend && npm start", 
+    "build-frontend": "cd frontend && npm run build"
   },
   "keywords": [],
   "author": "",
