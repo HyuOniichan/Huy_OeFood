@@ -13,7 +13,7 @@ function FoodMenuItem({ data }) {
     const [menu, setMenu] = useContext(MenuContext) 
 
     function handleDelete() {
-        fetch(`http://localhost:4004/food/${data._id}`, { method: 'DELETE' })
+        fetch(`https://oefood.onrender.com/food/${data._id}`, { method: 'DELETE' })
             .then(() => console.log('Deleted'))
             .catch(err => console.log(err))
         
@@ -28,7 +28,7 @@ function FoodMenuItem({ data }) {
         menu[changeId].cart = data.cart
         setMenu(menu) 
         
-        fetch(`http://localhost:4004/food/${data._id}`, {
+        fetch(`https://oefood.onrender.com/food/${data._id}`, {
             method: 'PUT',
             body: JSON.stringify(data),
             headers: { "Content-Type": "application/json" }
